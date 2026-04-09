@@ -1,12 +1,22 @@
 import pigeonSafety from "@/assets/pigeon-safety.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
+import cricketNets2 from "@/assets/cricket-nets-2.jpg";
 import invisibleGrill from "@/assets/invisible-grill.jpg";
 import sportsNets from "@/assets/sports-nets.jpg";
 import swimmingPool from "@/assets/swimming-pool.jpg";
 import carParking from "@/assets/car-parking.jpg";
+import carParking2 from "@/assets/car-parking-2.jpg";
 import coconutTree from "@/assets/coconut-tree.jpg";
+import coconutTree2 from "@/assets/coconut-tree-2.jpg";
 import kidsSafety from "@/assets/kids-safety.jpg";
+import kidsSafety2 from "@/assets/kids-safety-2.jpg";
 import constructionSafety from "@/assets/construction-safety.jpg";
+import staircaseSafety from "@/assets/staircase-safety.jpg";
+import sportsBallStop from "@/assets/sports-ball-stop.jpg";
+import terraceCricket from "@/assets/terrace-cricket.jpg";
+import terraceTop from "@/assets/terrace-top.jpg";
+import balconyHanger from "@/assets/balcony-hanger.jpg";
+import sportsInstallation from "@/assets/sports-installation.jpg";
 
 export interface Service {
   slug: string;
@@ -26,7 +36,7 @@ export const services: Service[] = [
     title: "Balcony Safety Nets",
     shortTitle: "Balcony Nets",
     icon: "🏢",
-    image: kidsSafety,
+    image: kidsSafety2,
     description: "Protect your balcony from accidents. Ideal for children, pets, and elderly safety. Strong, transparent nets that don't block your view or airflow.",
     details: [
       "High-tensile HDPE/Nylon material with UV stabilization",
@@ -188,7 +198,7 @@ export const services: Service[] = [
     title: "Cricket Practice Nets / Sports Nets",
     shortTitle: "Cricket Nets",
     icon: "🏏",
-    image: cricketNets,
+    image: cricketNets2,
     description: "Perfect for cricket practice and sports training. High-quality nets for long-lasting performance and professional training environments.",
     details: [
       "Professional-grade netting for serious practice",
@@ -206,7 +216,7 @@ export const services: Service[] = [
     title: "Sports Ball Stop Nets",
     shortTitle: "Ball Stop Nets",
     icon: "⚽",
-    image: sportsNets,
+    image: sportsBallStop,
     description: "High-quality ball stop netting for football, cricket, and all sports. Prevents balls from leaving the playing area.",
     details: [
       "Heavy-duty construction for all ball sports",
@@ -224,7 +234,7 @@ export const services: Service[] = [
     title: "Terrace Top Nets",
     shortTitle: "Terrace Nets",
     icon: "🏡",
-    image: pigeonSafety,
+    image: terraceTop,
     description: "Covers open terrace areas for safety and bird protection. Maintains airflow while ensuring complete protection.",
     details: [
       "Full terrace coverage with single or multi-panel installation",
@@ -242,7 +252,7 @@ export const services: Service[] = [
     title: "Staircase Safety Nets",
     shortTitle: "Staircase Nets",
     icon: "🪜",
-    image: kidsSafety,
+    image: staircaseSafety,
     description: "Prevents accidents in open staircases. Ideal for homes and commercial buildings with open stairwell designs.",
     details: [
       "Custom-fitted for any staircase design",
@@ -260,7 +270,7 @@ export const services: Service[] = [
     title: "Coconut Tree Safety Nets",
     shortTitle: "Coconut Nets",
     icon: "🌳",
-    image: coconutTree,
+    image: coconutTree2,
     description: "Protects people and property from falling coconuts. Strong and weather-resistant nets for complete safety under coconut trees.",
     details: [
       "Heavy-duty nets to catch falling coconuts",
@@ -278,7 +288,7 @@ export const services: Service[] = [
     title: "Car Parking Safety Nets",
     shortTitle: "Parking Nets",
     icon: "🚗",
-    image: carParking,
+    image: carParking2,
     description: "Ensures safety in parking areas by preventing falling objects. Protects vehicles and people in open and covered parking structures.",
     details: [
       "Protects vehicles from falling debris and bird droppings",
@@ -344,6 +354,24 @@ export const services: Service[] = [
     ],
     benefits: ["Large coverage", "Versatile", "Strong", "Weather-proof", "Competitive pricing"],
     category: "safety",
+  },
+  {
+    slug: "balcony-hangers",
+    title: "Balcony Hangers",
+    shortTitle: "Balcony Hangers",
+    icon: "👕",
+    image: balconyHanger,
+    description: "Premium ceiling-mounted balcony hangers for drying clothes efficiently. Space-saving, rust-proof, and designed for Indian balconies.",
+    details: [
+      "Ceiling-mounted pulley system for easy operation",
+      "Stainless steel rods — rust-proof and long-lasting",
+      "Adjustable height to suit your needs",
+      "Space-saving design for small balconies",
+      "Supports heavy wet clothes without sagging",
+      "Professional installation with concealed fittings"
+    ],
+    benefits: ["Rust-proof", "Space-saving", "Easy to use", "Heavy-duty", "Professional install"],
+    category: "other",
   },
 ];
 

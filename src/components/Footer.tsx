@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { services } from "@/data/services";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const safetyNets = services.filter(s => s.category === "safety" || s.category === "other");
@@ -13,7 +14,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-display font-bold text-secondary mb-4">Ramya Nets & Invisible Grills</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="Ramya Nets & Invisible Grills" className="h-12 w-12" width={48} height={48} loading="lazy" />
+              <h3 className="text-xl font-display font-bold text-secondary">Ramya Nets & Invisible Grills</h3>
+            </div>
             <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
               Your trusted safety net experts in Hyderabad. Professional installation, premium materials, and unbeatable prices.
             </p>

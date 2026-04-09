@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { services } from "@/data/services";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -16,9 +17,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex flex-col">
-            <span className="text-xl font-display font-bold text-primary">Ramya Nets</span>
-            <span className="text-xs text-muted-foreground tracking-wider">& Invisible Grills</span>
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="Ramya Nets & Invisible Grills" className="h-12 w-12" width={48} height={48} />
+            <div className="flex flex-col">
+              <span className="text-lg font-display font-bold text-primary leading-tight">Ramya Nets</span>
+              <span className="text-[10px] text-muted-foreground tracking-wider">& Invisible Grills</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
