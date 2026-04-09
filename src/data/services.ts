@@ -2,15 +2,17 @@ import pigeonSafety from "@/assets/pigeon-safety.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
 import cricketNets2 from "@/assets/cricket-nets-2.jpg";
 import invisibleGrill from "@/assets/invisible-grill.jpg";
+import invisibleGrill2 from "@/assets/invisible-grill-2.jpg";
 import sportsNets from "@/assets/sports-nets.jpg";
 import swimmingPool from "@/assets/swimming-pool.jpg";
 import carParking from "@/assets/car-parking.jpg";
 import carParking2 from "@/assets/car-parking-2.jpg";
-import coconutTree from "@/assets/coconut-tree.jpg";
 import coconutTree2 from "@/assets/coconut-tree-2.jpg";
 import kidsSafety from "@/assets/kids-safety.jpg";
 import kidsSafety2 from "@/assets/kids-safety-2.jpg";
 import constructionSafety from "@/assets/construction-safety.jpg";
+import buildingSafety from "@/assets/building-safety.jpg";
+import ductArea from "@/assets/duct-area.jpg";
 import staircaseSafety from "@/assets/staircase-safety.jpg";
 import sportsBallStop from "@/assets/sports-ball-stop.jpg";
 import terraceCricket from "@/assets/terrace-cricket.jpg";
@@ -108,7 +110,7 @@ export const services: Service[] = [
     title: "Bird Spikes / Anti-Bird Spikes",
     shortTitle: "Bird Spikes",
     icon: "🕊",
-    image: pigeonSafety,
+    image: carParking,
     description: "Prevents birds from sitting on ledges, AC units, and railings. Long-lasting and rust-proof spikes for comprehensive bird deterrence.",
     details: [
       "Stainless steel and polycarbonate options available",
@@ -126,7 +128,7 @@ export const services: Service[] = [
     title: "Building Safety Nets",
     shortTitle: "Building Nets",
     icon: "🏗",
-    image: constructionSafety,
+    image: buildingSafety,
     description: "Used for high-rise buildings to prevent falling objects and accidents. Perfect for apartments and construction areas with comprehensive coverage.",
     details: [
       "Heavy-duty nets for high-rise buildings",
@@ -162,7 +164,7 @@ export const services: Service[] = [
     title: "Industrial Safety Nets",
     shortTitle: "Industrial Nets",
     icon: "🏭",
-    image: constructionSafety,
+    image: sportsInstallation,
     description: "Heavy-duty nets designed for factories and industrial areas. Ensures worker safety and accident prevention in demanding environments.",
     details: [
       "Industrial-grade materials for heavy loads",
@@ -306,7 +308,7 @@ export const services: Service[] = [
     title: "Invisible Grills",
     shortTitle: "Invisible Grills",
     icon: "🧰",
-    image: invisibleGrill,
+    image: invisibleGrill2,
     description: "Modern alternative to traditional grills with strong stainless-steel wires, elegant look, high safety, and rust-resistant properties. Perfect for balconies and windows.",
     details: [
       "316-grade stainless steel wires",
@@ -324,7 +326,7 @@ export const services: Service[] = [
     title: "Duct Area Safety Nets",
     shortTitle: "Duct Nets",
     icon: "🧵",
-    image: constructionSafety,
+    image: ductArea,
     description: "Covers open duct spaces to prevent accidents and bird entry. Essential for apartment buildings with open duct areas.",
     details: [
       "Custom-fitted for duct openings",
