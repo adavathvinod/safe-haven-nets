@@ -60,7 +60,7 @@ const Contact = () => (
                 </div>
               </div>
             </div>
-            <a href="https://wa.me/918978063844" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity">
+            <a href="https://wa.me/918877441175" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity">
               💬 WhatsApp Us Now
             </a>
           </AnimatedSection>
