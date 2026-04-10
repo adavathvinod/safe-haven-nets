@@ -86,7 +86,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">Comprehensive Safety Solutions</h2>
           </AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {services.slice(0, 8).map((s, i) => (
+            {services.map((s, i) => (
               <AnimatedSection key={s.slug} animation="animate-fade-in-up">
                 <ServiceCard service={s} index={i} />
               </AnimatedSection>
