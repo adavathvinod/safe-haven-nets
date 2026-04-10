@@ -31,11 +31,11 @@ const Contact = () => (
                   <p className="text-muted-foreground">+91 8978063844</p>
                 </div>
               </a>
-              <a href="tel:+917416941175" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
+              <a href="tel:+918877441175" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
                 <Phone className="w-6 h-6 text-secondary mt-1" />
                 <div>
-                  <p className="font-bold text-foreground">Phone 2</p>
-                  <p className="text-muted-foreground">+91 7416941175</p>
+                  <p className="font-bold text-foreground">Phone 2 (WhatsApp)</p>
+                  <p className="text-muted-foreground">+91 8877441175</p>
                 </div>
               </a>
               <a href="mailto:ramyanets98@gmail.com" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
