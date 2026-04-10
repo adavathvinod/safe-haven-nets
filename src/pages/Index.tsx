@@ -5,6 +5,7 @@ import HeroSlider from "@/components/HeroSlider";
 import ServiceCard from "@/components/ServiceCard";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { services } from "@/data/services";
+import WorkGallery from "@/components/WorkGallery";
 import constructionSafety from "@/assets/construction-safety.jpg";
 import invisibleGrill from "@/assets/invisible-grill.jpg";
 
@@ -155,6 +156,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* Work Gallery */}
+      <WorkGallery />
     </Layout>
   );
 };
