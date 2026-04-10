@@ -82,7 +82,8 @@ const Footer = () => {
 
         <div className="border-t border-muted-foreground/20 pt-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Ramya Nets and Invisible Grills. All rights reserved.
+            © {new Date().getFullYear()} Ramya Nets and Invisible Grills. All rights reserved. Designed by{" "}
+            <a href="https://www.asksolutionsindia.com/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Ask Solutions India</a>
           </p>
         </div>
       </div>
