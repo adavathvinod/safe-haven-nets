@@ -108,10 +108,10 @@ const Index = () => {
             <h2 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground mb-4">Call For Free Inspection & Instant Quote</h2>
             <p className="text-xl text-primary-foreground/80 mb-8">Looking for urgent installation? We're just a call away.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="tel:+919900220020" className="flex items-center gap-2 bg-secondary text-secondary-foreground px-10 py-4 rounded-full text-lg font-bold hover:opacity-90 transition-opacity animate-pulse-glow">
-                <Phone className="w-5 h-5" /> +91 9900220020
+              <a href="tel:+918978063844" className="flex items-center gap-2 bg-secondary text-secondary-foreground px-10 py-4 rounded-full text-lg font-bold hover:opacity-90 transition-opacity animate-pulse-glow">
+                <Phone className="w-5 h-5" /> +91 8978063844
               </a>
-              <a href="https://wa.me/919900220020" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-primary-foreground/50 text-primary-foreground px-10 py-4 rounded-full text-lg font-bold hover:bg-primary-foreground/10 transition-colors">
+              <a href="https://wa.me/918978063844" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-primary-foreground/50 text-primary-foreground px-10 py-4 rounded-full text-lg font-bold hover:bg-primary-foreground/10 transition-colors">
                 💬 WhatsApp Us
               </a>
             </div>

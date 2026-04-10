@@ -27,7 +27,7 @@ const ServiceCard = ({ service, index }: { service: Service; index: number }) =>
     </Link>
     <div className="absolute bottom-0 left-0 right-0 p-4 pt-0">
       <a
-        href="tel:+919900220020"
+        href="tel:+918978063844"
         className="flex items-center justify-center gap-2 bg-secondary text-secondary-foreground w-full py-2.5 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity"
         onClick={(e) => e.stopPropagation()}
       >
