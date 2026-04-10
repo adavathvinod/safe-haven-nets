@@ -70,7 +70,7 @@ const Header = () => {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+919900220020" className="flex items-center gap-2 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+            <a href="tel:+918978063844" className="flex items-center gap-2 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
               <Phone className="w-4 h-4" /> Call Now
             </a>
           </div>
@@ -101,7 +101,7 @@ const Header = () => {
               </div>
             )}
             <Link to="/contact" onClick={() => setMobileOpen(false)} className="block text-sm font-medium py-2">Contact</Link>
-            <a href="tel:+919900220020" className="flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-5 py-3 rounded-full text-sm font-semibold">
+            <a href="tel:+918978063844" className="flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-5 py-3 rounded-full text-sm font-semibold">
               <Phone className="w-4 h-4" /> Call Now
             </a>
           </div>

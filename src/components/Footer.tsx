@@ -22,8 +22,11 @@ const Footer = () => {
               Your trusted safety net experts in Hyderabad. Professional installation, premium materials, and unbeatable prices.
             </p>
             <div className="space-y-3">
-              <a href="tel:+919900220020" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-secondary transition-colors">
-                <Phone className="w-4 h-4 text-secondary" /> +91 9900220020
+              <a href="tel:+918978063844" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-secondary transition-colors">
+                <Phone className="w-4 h-4 text-secondary" /> +91 8978063844
+              </a>
+              <a href="tel:+917416941175" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-secondary transition-colors">
+                <Phone className="w-4 h-4 text-secondary" /> +91 7416941175
               </a>
               <a href="mailto:ramyanets98@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-secondary transition-colors">
                 <Mail className="w-4 h-4 text-secondary" /> ramyanets98@gmail.com

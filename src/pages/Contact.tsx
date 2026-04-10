@@ -24,11 +24,18 @@ const Contact = () => (
           <AnimatedSection>
             <h2 className="text-3xl font-display font-bold text-foreground mb-8">Get In Touch</h2>
             <div className="space-y-6">
-              <a href="tel:+919900220020" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
+              <a href="tel:+918978063844" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
                 <Phone className="w-6 h-6 text-secondary mt-1" />
                 <div>
-                  <p className="font-bold text-foreground">Phone</p>
-                  <p className="text-muted-foreground">+91 9900220020</p>
+                  <p className="font-bold text-foreground">Phone 1</p>
+                  <p className="text-muted-foreground">+91 8978063844</p>
+                </div>
+              </a>
+              <a href="tel:+917416941175" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
+                <Phone className="w-6 h-6 text-secondary mt-1" />
+                <div>
+                  <p className="font-bold text-foreground">Phone 2</p>
+                  <p className="text-muted-foreground">+91 7416941175</p>
                 </div>
               </a>
               <a href="mailto:ramyanets98@gmail.com" className="flex items-start gap-4 p-4 rounded-xl bg-card shadow-md hover:shadow-lg transition-shadow">
@@ -53,7 +60,7 @@ const Contact = () => (
                 </div>
               </div>
             </div>
-            <a href="https://wa.me/919900220020" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity">
+            <a href="https://wa.me/918978063844" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-opacity">
               💬 WhatsApp Us Now
             </a>
           </AnimatedSection>
