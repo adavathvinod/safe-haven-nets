@@ -88,7 +88,7 @@ const HeroSlider = () => {
                 <a href="tel:+918978063844" className="flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity animate-pulse-glow">
                   <Phone className="w-5 h-5" /> Call for Free Quote
                 </a>
-                <a href="https://wa.me/918978063844" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-primary-foreground/50 text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-foreground/10 transition-colors">
+                <a href="https://wa.me/918877441175" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-primary-foreground/50 text-primary-foreground px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-foreground/10 transition-colors">
                   💬 WhatsApp Us
                 </a>
               </div>

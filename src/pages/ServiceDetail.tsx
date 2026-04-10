@@ -86,10 +86,10 @@ const ServiceDetail = () => {
                   <a href="tel:+918978063844" className="flex items-center justify-center gap-2 bg-secondary text-secondary-foreground w-full py-4 rounded-xl font-bold hover:opacity-90 transition-opacity">
                     <Phone className="w-5 h-5" /> +91 8978063844
                   </a>
-                  <a href="tel:+917416941175" className="flex items-center justify-center gap-2 bg-secondary/80 text-secondary-foreground w-full py-4 rounded-xl font-bold mt-3 hover:opacity-90 transition-opacity">
-                    <Phone className="w-5 h-5" /> +91 7416941175
+                  <a href="tel:+918877441175" className="flex items-center justify-center gap-2 bg-secondary/80 text-secondary-foreground w-full py-4 rounded-xl font-bold mt-3 hover:opacity-90 transition-opacity">
+                    <Phone className="w-5 h-5" /> +91 8877441175
                   </a>
-                  <a href="https://wa.me/918978063844" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground w-full py-4 rounded-xl font-bold mt-3 hover:bg-primary-foreground/10 transition-colors">
+                  <a href="https://wa.me/918877441175" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground w-full py-4 rounded-xl font-bold mt-3 hover:bg-primary-foreground/10 transition-colors">
                     💬 WhatsApp Us
                   </a>
                 </div>
