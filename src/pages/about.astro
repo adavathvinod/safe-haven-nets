@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import AboutPage from "@/views/About";
+import { SITE_URL, getBreadcrumbSchema, getPageSchema } from "@/lib/seo";
+
+const title = "About Safe Haven Nets | Safety Net Installation Experts in Hyderabad";
+const description =
+  "Learn about Safe Haven Nets, Hyderabad's trusted team for balcony safety nets, pigeon nets, kids safety nets and invisible grill installation.";
+const path = "/about";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "About", path: "/about" },
+    ]),
+  ]}
+>
+  <AboutPage client:load />
+</BaseLayout>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Phone, Shield, Clock, Award, Users, CheckCircle, Star, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import HeroSlider from "@/components/HeroSlider";
@@ -33,18 +32,16 @@ const faqs = [
   { q: "Can nets be removed later?", a: "Yes, they can be easily removed without any damage to your property." },
 ];
 
-const Index = () => {
+const Index = (_props: Record<string, unknown>) => {
   return (
     <Layout>
-      {/* Hero */}
       <HeroSlider />
 
-      {/* Why Choose Us */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
             <span className="text-secondary font-semibold text-sm uppercase tracking-widest">Why Choose Us</span>
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">The Ramya Nets Difference</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-3">The Safe Haven Nets Difference</h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">We combine quality materials, expert installation, and unbeatable pricing to deliver safety solutions you can trust.</p>
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -61,15 +58,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Parallax */}
-      <section className="parallax-section relative py-28" style={{ backgroundImage: `url(${invisibleGrill})` }}>
+      <section className="parallax-section relative py-28" style={{ backgroundImage: `url(${invisibleGrill.src})` }}>
         <div className="absolute inset-0 bg-foreground/80" />
         <div className="container mx-auto px-4 relative z-10">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
             <span className="text-secondary font-semibold text-sm uppercase tracking-widest">About Us</span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-primary-foreground mt-3 mb-6">Who We Are</h2>
             <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8">
-              Ramya Nets and Invisible Grills is a leading safety solutions provider in Hyderabad. We specialize in installing balcony safety nets, bird protection systems, invisible grills, and industrial safety nets. With experienced professionals and premium materials, we ensure long-lasting protection for homes, apartments, offices, and commercial buildings.
+              Safe Haven Nets is a leading safety solutions provider in Hyderabad. We specialize in balcony safety nets, bird protection systems, invisible grills, and industrial safety nets for homes, apartments, offices, and commercial buildings.
             </p>
             <p className="text-xl font-display text-secondary italic">
               "Make every space safe, secure, and stress-free."
@@ -78,7 +74,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
@@ -93,15 +88,14 @@ const Index = () => {
             ))}
           </div>
           <AnimatedSection className="text-center mt-12">
-            <Link to="/services/balcony-safety-nets" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity">
+            <a href="/services" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity">
               View All Services <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* CTA Parallax */}
-      <section className="parallax-section relative py-28" style={{ backgroundImage: `url(${constructionSafety})` }}>
+      <section className="parallax-section relative py-28" style={{ backgroundImage: `url(${constructionSafety.src})` }}>
         <div className="absolute inset-0 bg-primary/90" />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <AnimatedSection>
@@ -124,7 +118,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonial */}
       <section className="py-20 lg:py-28 bg-muted">
         <div className="container mx-auto px-4">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
@@ -139,7 +132,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
@@ -156,7 +148,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Work Gallery */}
+
       <WorkGallery />
     </Layout>
   );

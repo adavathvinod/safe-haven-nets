@@ -1,0 +1,11 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import NotFoundPage from "@/views/NotFound";
+
+const title = "Page Not Found | Safe Haven Nets";
+const description = "The page you requested could not be found.";
+---
+
+<BaseLayout title={title} description={description} noindex={true}>
+  <NotFoundPage client:load />
+</BaseLayout>

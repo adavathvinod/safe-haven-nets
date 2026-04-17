@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ServiceDetailPage from "@/views/ServiceDetail";
+import { services } from "@/data/services";
+import { SITE_URL, getBreadcrumbSchema, getPageSchema, getServiceSchema } from "@/lib/seo";
+
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const path = `/services/${service.slug}`;
+const title = `${service.title} in Hyderabad | Safe Haven Nets`;
+const description = service.description;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getServiceSchema(service.title, description, path),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Services", path: "/services" },
+      { name: service.shortTitle, path },
+    ]),
+  ]}
+>
+  <ServiceDetailPage slug={service.slug} client:load />
+</BaseLayout>

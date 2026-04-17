@@ -1,0 +1,41 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import IndexPage from "@/views/Index";
+import { SITE_URL, getBreadcrumbSchema, getFAQSchema, getPageSchema } from "@/lib/seo";
+
+const title = "Safe Haven Nets | Balcony Safety Nets, Pigeon Nets & Invisible Grills in Hyderabad";
+const description =
+  "Safe Haven Nets provides balcony safety nets, pigeon nets, kids safety nets, bird protection and invisible grill installation across Hyderabad with free site inspection and same-day service.";
+const path = "/";
+const faqs = [
+  {
+    question: "Do you provide free installation?",
+    answer: "Yes, we provide free installation for safety net and invisible grill services across Hyderabad.",
+  },
+  {
+    question: "How long does installation take?",
+    answer: "Most installations are completed within a few hours depending on the area and service type.",
+  },
+  {
+    question: "Do you offer same-day service?",
+    answer: "Yes, same-day installation is available in many Hyderabad locations based on availability.",
+  },
+  {
+    question: "Are the nets safe for children and pets?",
+    answer: "Yes, our nets use durable and non-toxic materials designed for child and pet safety.",
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([{ name: "Home", path: "/" }]),
+    getFAQSchema(faqs),
+  ]}
+>
+  <IndexPage client:load />
+</BaseLayout>

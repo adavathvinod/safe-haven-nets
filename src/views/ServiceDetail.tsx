@@ -1,5 +1,4 @@
-import { useParams, Link } from "react-router-dom";
-import { Phone, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
+import { Phone, CheckCircle, ArrowLeft } from "lucide-react";
 import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -10,9 +9,13 @@ const AnimatedSection = ({ children, className = "" }: { children: React.ReactNo
   return <div ref={ref} className={`${className} ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>{children}</div>;
 };
 
-const ServiceDetail = () => {
-  const { slug } = useParams();
-  const service = getServiceBySlug(slug || "");
+interface ServiceDetailProps {
+  slug?: string;
+  [key: string]: unknown;
+}
+
+const ServiceDetail = ({ slug = "" }: ServiceDetailProps) => {
+  const service = getServiceBySlug(slug);
 
   if (!service) {
     return (
@@ -20,31 +23,29 @@ const ServiceDetail = () => {
         <div className="min-h-[60vh] flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-display font-bold text-foreground mb-4">Service Not Found</h1>
-            <Link to="/" className="text-secondary font-semibold hover:underline">Go Home</Link>
+            <a href="/" className="text-secondary font-semibold hover:underline">Go Home</a>
           </div>
         </div>
       </Layout>
     );
   }
 
-  const relatedServices = services.filter(s => s.slug !== service.slug && s.category === service.category).slice(0, 4);
+  const relatedServices = services.filter((s) => s.slug !== service.slug && s.category === service.category).slice(0, 4);
 
   return (
     <Layout>
-      {/* Hero */}
       <section className="parallax-section relative py-32 md:py-44" style={{ backgroundImage: `url(${service.image})` }}>
         <div className="absolute inset-0 bg-foreground/75" />
         <div className="container mx-auto px-4 relative z-10">
-          <Link to="/" className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground mb-6 transition-colors">
+          <a href="/" className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Home
-          </Link>
+          </a>
           <span className="text-5xl block mb-4">{service.icon}</span>
           <h1 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-4">{service.title}</h1>
           <p className="text-xl text-primary-foreground/80 max-w-2xl">{service.description}</p>
         </div>
       </section>
 
-      {/* Details */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-16">
@@ -77,7 +78,6 @@ const ServiceDetail = () => {
               </AnimatedSection>
             </div>
 
-            {/* Sidebar */}
             <div>
               <div className="sticky top-28 space-y-6">
                 <div className="bg-primary text-primary-foreground rounded-2xl p-8">
@@ -97,14 +97,14 @@ const ServiceDetail = () => {
                 <div className="bg-card rounded-2xl p-8 shadow-lg">
                   <h4 className="text-lg font-display font-bold text-foreground mb-4">All Services</h4>
                   <div className="space-y-2 max-h-80 overflow-y-auto">
-                    {services.map(s => (
-                      <Link
+                    {services.map((s) => (
+                      <a
                         key={s.slug}
-                        to={`/services/${s.slug}`}
+                        href={`/services/${s.slug}`}
                         className={`flex items-center gap-2 text-sm py-2 px-3 rounded-lg transition-colors ${s.slug === slug ? "bg-secondary/10 text-secondary font-semibold" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`}
                       >
                         <span>{s.icon}</span> {s.shortTitle}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -114,7 +114,6 @@ const ServiceDetail = () => {
         </div>
       </section>
 
-      {/* Related Services */}
       {relatedServices.length > 0 && (
         <section className="py-20 bg-muted">
           <div className="container mx-auto px-4">
@@ -130,7 +129,6 @@ const ServiceDetail = () => {
         </section>
       )}
 
-      {/* CTA */}
       <section className="section-dark py-20 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">Ready to Get Started?</h2>

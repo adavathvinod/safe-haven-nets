@@ -8,9 +8,9 @@ const AnimatedSection = ({ children, className = "" }: { children: React.ReactNo
   return <div ref={ref} className={`${className} ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>{children}</div>;
 };
 
-const Contact = () => (
+const Contact = (_props: Record<string, unknown>) => (
   <Layout>
-    <section className="parallax-section relative py-32 md:py-44" style={{ backgroundImage: `url(${constructionSafety})` }}>
+    <section className="parallax-section relative py-32 md:py-44" style={{ backgroundImage: `url(${constructionSafety.src})` }}>
       <div className="absolute inset-0 bg-foreground/80" />
       <div className="container mx-auto px-4 relative z-10 text-center">
         <h1 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-4">Contact Us</h1>

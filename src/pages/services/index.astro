@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ServicesIndexView from "@/views/ServicesIndex";
+import { SITE_URL, getBreadcrumbSchema, getPageSchema } from "@/lib/seo";
+
+const title = "Safety Net Services in Hyderabad | Safe Haven Nets";
+const description =
+  "Explore balcony safety nets, pigeon nets, invisible grills, kids safety nets, sports nets and more from Safe Haven Nets in Hyderabad.";
+const path = "/services";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={path}
+  schema={[
+    getPageSchema(`${SITE_URL}${path}`, title, description),
+    getBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Services", path: "/services" },
+    ]),
+  ]}
+>
+  <ServicesIndexView client:load />
+</BaseLayout>

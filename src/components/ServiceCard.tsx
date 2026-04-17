@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
 import type { Service } from "@/data/services";
 
@@ -7,7 +6,7 @@ const ServiceCard = ({ service, index }: { service: Service; index: number }) =>
     className="group relative overflow-hidden rounded-2xl bg-card shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
     style={{ animationDelay: `${index * 0.1}s` }}
   >
-    <Link to={`/services/${service.slug}`}>
+    <a href={`/services/${service.slug}`} className="block">
       <div className="aspect-[4/3] overflow-hidden">
         <img
           src={service.image}
@@ -24,12 +23,11 @@ const ServiceCard = ({ service, index }: { service: Service; index: number }) =>
           Learn More <ArrowRight className="w-4 h-4" />
         </span>
       </div>
-    </Link>
+    </a>
     <div className="absolute bottom-0 left-0 right-0 p-4 pt-0">
       <a
         href="tel:+918978063844"
         className="flex items-center justify-center gap-2 bg-secondary text-secondary-foreground w-full py-2.5 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity"
-        onClick={(e) => e.stopPropagation()}
       >
         <Phone className="w-4 h-4" /> Call Now
       </a>

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "noEmit": true,
     "noImplicitAny": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
@@ -12,13 +13,9 @@
     "skipLibCheck": true,
     "strictNullChecks": false
   },
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
+  "extends": "./node_modules/astro/tsconfigs/strict.json",
+  "include": [
+    "src",
+    "astro.config.mjs"
   ]
 }
